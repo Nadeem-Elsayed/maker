@@ -17,7 +17,7 @@ then
         usage
 else
         touch makefile
-        if [[ -s "makefile" ]]
+        if [[ -f "makefile" ]]
         then
                 echo "$2: $1
         gcc -o $2 $1" >> makefile
